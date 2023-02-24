@@ -36,7 +36,7 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 3. Create a function named `createList` that accept and array of data like ['Mango', 'Apple', 'Banana'] and returns
 // the html for the link like <ul> <li>Mango</li>  <li>Apple</li>  <li>Banana</li> </ul>
 // Your code goes here
-function createList(array) {
+function createList(array = []) {
   let list = document.createElement(`ul`);
   array.forEach(element => {
     let li = document.createElement(`li`);
@@ -63,7 +63,7 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 */
 
 // Your code goes here
-function createTodoList(array) {
+function createTodoList(array = []) {
   let list = document.createElement(`ul`);
   array.forEach(element => {
     let li = document.createElement(`li`);
