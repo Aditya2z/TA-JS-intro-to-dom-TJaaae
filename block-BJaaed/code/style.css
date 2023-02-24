@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styling Starts Here */
+/* Desktop First Approach */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Raleway', sans-serif;;
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+    background-color: var(--body-bg);
+}
+button,
+input,
+select,
+textarea {
+    font-family: 'Raleway', sans-serif;;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+img,
+audio,
+video {
+    width: 100%;
+}
+
+/* Variables */
+:root {
+    --primary:  #377E80;
+    --secondary: #FFFB54;
+    --tertiary: #727272;
+    --body-bg: #FDF5E8;
+}
+
+/* Containers */
+.container-95{
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+/* Buttons */
+.btn {
+    background: var(--primary);
+    color: white;
+    font-size: .875rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+}
+
+/* Header styles start */
+header {
+background-color: var(--primary);
+color: var(--secondary);
+text-align: center;
+padding: 1rem;
+}
+/* Header styles end */
+
+/* main styles start */
+main {
+    padding: 3rem 0;
+}
+main .card {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin: .5rem;
+}
+main .card img {
+    width: 50%;
+}
+main .card h2 {
+    margin: .25rem 0;
+}
+main .card p {
+    margin: .25rem;
+    color: var(--tertiary);
+    font-weight: 500;
+    font-size: .825rem;
+}
+main .card .btn {
+    margin: 1rem;
+}
+/* main styles end */
+
+/* Media Query for Medium Screens */
+@media screen and (max-width:1260px) {
+    /* Flex */
+    .flex-32 {
+        flex: 0 1 31%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    /* Flex */
+    .flex-32 {
+        flex: 0 1 48%;
+    }
+}
+
+@media screen and (max-width:910px) {
+    /* Flex */
+    .flex-32 {
+        flex: 0 1 47.5%;
+    }
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width:768px) {
+    /* Flex */
+    .flex-32 {
+        flex: 0 1 100%;
+    }
+}
